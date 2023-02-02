@@ -4,9 +4,9 @@ export const customTheme: ThemeOptions = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      light: 'rgba(15,10,222,.80)',
-      main: 'rgba(15,10,222,.65)',
-      dark: 'rgba(15,10,222,.28)',
+      light: 'rgba(0,0,255.80)',
+      main: 'rgba(0,0,255,.65)',
+      dark: 'rgba(0,0,255,.28)',
     },
     background: {
       paper: '#151515',
