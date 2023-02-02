@@ -50,7 +50,7 @@ export const CreateTaskForm: FC = (): ReactElement => {
   const createTaskMutation = useMutation(
     (data: ICreateTask) =>
       sendApiRequest(
-        'http://localhost:3200/tasks',
+        'https://task-manager-db.herokuapp.com/tasks',
         'POST',
         data,
       ),

@@ -31,7 +31,7 @@ export const TaskArea: FC = (): ReactElement => {
     'tasks',
     async () => {
       return await sendApiRequest<ITaskApi[]>(
-        'http://localhost:3200/tasks',
+        'https://task-manager-db.herokuapp.com/tasks',
         'GET',
       );
     },
@@ -41,7 +41,7 @@ export const TaskArea: FC = (): ReactElement => {
   const updateTaskMutation = useMutation(
     (data: IUpdateTask) =>
       sendApiRequest(
-        'http://localhost:3200/tasks',
+        'https://task-manager-db.herokuapp.com/tasks',
         'PUT',
         data,
       ),
